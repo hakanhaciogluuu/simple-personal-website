@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+html, body {
+width: 100%;
+height: 100%;
+background: url(/images/bg.jpg);
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.flex-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  width: 55%;
+  height: 65%;
+  background-color: rgba(138, 130, 130, 0.4);
+  text-align: center;
+  align-items: center;
+  border-radius: 10%;
+  padding: 4rem;
+}
+.img img{
+  width: 80%;
+  border-radius: 50%;
+}
+
+.img{
+  width: 25%;
+}
+.content{
+  width: 75%;
+  text-align: center;
+}
+.content h1{
+    font-family: 'New Tegomin',
+    serif;
+    font-size: 4rem;
+    margin-bottom: 3%;
+}
+
+.content h3{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+}
+
+.content p{
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 1rem;
+}
+.icons{
+  letter-spacing: 0.4rem;
+}
+.fab{
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 1525px) {
+  .main{
+    max-width: 840px;
+  }
+  
+}
+
+@media screen and (max-width: 1450px){
+  html{
+    font-size: 12px;
+  }
+  .main{
+    min-width: 800px;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  html {
+    font-size: 11px;
+  }
+
+  .main {
+      min-width: 700px;
+  }
+}
+
+@media screen and (max-width: 1132px) {
+  html {
+    font-size: 10px;
+  }
+  .main {
+      min-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1132px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .flex-container{
+    min-height: fit-content;
+  }
+  .main{
+    flex-direction: column;
+    min-width: 400px;
+    min-height: 350px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .img img{
+    width: 100%;
+  }
+
+  .content h1{
+    font-size: 31px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  
+  .content h3{
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}
